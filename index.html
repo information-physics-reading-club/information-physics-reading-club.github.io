@@ -1,11 +1,289 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>My GitHub Page</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Information Physics Reading Club</title>
+
+  <style>
+    :root {
+      --bg: #0b0f17;
+      --card: rgba(255, 255, 255, 0.06);
+      --text: rgba(255, 255, 255, 0.92);
+      --muted: rgba(255, 255, 255, 0.72);
+      --faint: rgba(255, 255, 255, 0.55);
+      --border: rgba(255, 255, 255, 0.10);
+      --link: rgba(255, 255, 255, 0.92);
+      --linkHover: rgba(255, 255, 255, 1);
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      padding: 48px 18px;
+      background: radial-gradient(900px 600px at 20% 15%, rgba(255,255,255,0.08), transparent 60%),
+                  radial-gradient(900px 600px at 80% 85%, rgba(255,255,255,0.06), transparent 60%),
+                  var(--bg);
+
+      color: var(--text);
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+      line-height: 1.55;
+    }
+
+    .wrap {
+      width: 100%;
+      max-width: 900px;
+    }
+
+    .card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      padding: 28px 26px;
+      box-shadow: 0 10px 32px rgba(0,0,0,0.35);
+      backdrop-filter: blur(10px);
+    }
+
+    header h1 {
+      margin: 0 0 10px 0;
+      font-size: 2.0rem;
+      letter-spacing: 0.2px;
+    }
+
+    header p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 1.05rem;
+    }
+
+    hr {
+      border: 0;
+      border-top: 1px solid var(--border);
+      margin: 22px 0;
+    }
+
+    h2 {
+      margin: 0 0 10px 0;
+      font-size: 1.05rem;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      color: var(--faint);
+    }
+
+    p {
+      margin: 0 0 12px 0;
+      color: var(--muted);
+    }
+
+    .meta {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 16px;
+    }
+
+    @media (min-width: 820px) {
+      .meta {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    a {
+      color: var(--link);
+      text-decoration: underline;
+      text-underline-offset: 3px;
+    }
+    a:hover { color: var(--linkHover); }
+
+    ul {
+      margin: 10px 0 0 18px;
+      padding: 0;
+      color: var(--muted);
+    }
+
+    li { margin: 10px 0; }
+
+    .session-title {
+      font-weight: 600;
+      color: var(--text);
+    }
+
+    .authors, .notes {
+      color: var(--muted);
+    }
+
+    .cta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      align-items: center;
+      margin-top: 12px;
+    }
+
+    .button {
+      display: inline-block;
+      padding: 10px 14px;
+      border-radius: 12px;
+      border: 1px solid var(--border);
+      background: rgba(255,255,255,0.08);
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    .button:hover {
+      background: rgba(255,255,255,0.12);
+    }
+
+    .small {
+      font-size: 0.95rem;
+      color: var(--muted);
+    }
+
+    .footnote {
+      margin-top: 14px;
+      color: var(--faint);
+      font-size: 0.92rem;
+    }
+  </style>
 </head>
+
 <body>
-  <h1>Hello world 👋</h1>
-  <p>Welcome to my GitHub Pages site.</p>
+  <main class="wrap">
+    <section class="card">
+      <header>
+        <h1>Information Physics Reading Club</h1>
+        <p>
+          Reading works by Shannon, Friston, Landauer, as well as modern papers, in order to better understand
+          how information behaves in our physical reality.
+        </p>
+      </header>
+
+      <hr />
+
+      <section class="meta">
+        <div>
+          <h2>Who we are</h2>
+          <p>Researchers in physics, machine learning, and biology.</p>
+        </div>
+
+        <div>
+          <h2>Contact</h2>
+          <p>
+            <a href="mailto:jamiesonwarner@gmail.com">jamiesonwarner@gmail.com</a>
+          </p>
+        </div>
+      </section>
+
+      <hr />
+
+    <section>
+      <h2>Reading Sessions</h2>
+      <p class="small">
+        Each session centers on one or more papers or a themed discussion of published work.
+      </p>
+
+      <ul>
+        <li>
+          <span class="session-title">Sep 16, 2025</span>
+          <div>
+            <em>Paper:</em>
+            “Using Dynamical Systems Theory to Quantify Complexity in Asymptotic Lenia”
+          </div>
+          <div class="authors">
+            Ivan Yevenko, Hiroki Kojima, Chrystopher L. Nehaniv
+          </div>
+        </li>
+
+        <li>
+          <span class="session-title">Oct 28, 2025</span>
+          <div>
+            <em>Paper:</em>
+            “Information Theory and Statistical Mechanics”
+          </div>
+          <div class="authors">
+            E. T. Jaynes
+          </div>
+        </li>
+
+        <li>
+          <span class="session-title">Nov 11, 2025</span>
+          <div>
+            <em>Papers discussed:</em>
+          </div>
+          <ul>
+            <li>
+              “The math is not the territory: navigating the free energy principle”
+              <span class="authors">— Mel Andrews (2020)</span>
+            </li>
+            <li>
+              “On Bayesian mechanics: a physics of and by beliefs”
+              <span class="authors">— Ramstead et al. (2023)</span>
+            </li>
+          </ul>
+        </li>
+
+        <li>
+          <span class="session-title">Dec 2, 2025</span>
+          <div>
+            <em>Theme:</em>
+            “Kauffman on the Emergence of Life”
+          </div>
+          <div class="authors">
+            Work by Stuart Kauffman
+          </div>
+        </li>
+
+        <li>
+          <span class="session-title">Dec 11, 2025</span>
+          <div>
+            <em>Theme:</em>
+            “Intuition &amp; Mathematics of Free Energy”
+          </div>
+          <div class="authors">
+            Work by Karl Friston
+          </div>
+        </li>
+      </ul>
+    </section>
+
+
+      <hr />
+
+      <section>
+        <h2>Interested in joining?</h2>
+        <p>
+          Interested in joining? Please reach out via email. If you have a paper you'd like to present,
+          feel free to propose it.
+        </p>
+
+        <div class="cta">
+          <a class="button" href="mailto:jamiesonwarner@gmail.com?subject=Information%20Physics%20Reading%20Club%20-%20Interested%20in%20joining">
+            Email to join
+          </a>
+          <a class="button" href="mailto:jamiesonwarner@gmail.com?subject=Information%20Physics%20Reading%20Club%20-%20Paper%20proposal">
+            Propose a paper
+          </a>
+        </div>
+
+        <div class="footnote">
+          Papers I’d like to have presented:
+          <ul>
+            <li>
+              “Position-Momenta Uncertainties in Classical Systems” — Dipesh K. Singh and P. K. Mohanty
+            </li>
+            <li>
+              “A Mathematical Theory of Communication” — Claude E. Shannon
+            </li>
+          </ul>
+        </div>
+      </section>
+    </section>
+  </main>
 </body>
-</html>
+</html
+::contentReference[oaicite:0]{index=0}
