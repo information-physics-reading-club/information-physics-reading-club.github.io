@@ -4,6 +4,8 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Information Physics Reading Club</title>
+  <meta name="description" content="Information Physics Reading Club: a community reading Shannon, Friston, Landauer, and related work on information, thermodynamics, and learning." />
+  <link rel="canonical" href="https://information-physics-reading-club.github.io/" />
 
   <style>
     :root {
@@ -112,6 +114,44 @@
       color: var(--text);
     }
 
+    .slides {
+      margin-top: 8px;
+    }
+
+    .slide-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 6px 12px;
+      border-radius: 999px;
+      border: 1px solid var(--border);
+      background: rgba(255,255,255,0.08);
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 0.95rem;
+      color: var(--text);
+    }
+
+    .slide-link:hover {
+      background: rgba(255,255,255,0.12);
+    }
+
+    .slide-icon {
+      width: 24px;
+      height: 24px;
+      border-radius: 50%;
+      display: inline-grid;
+      place-items: center;
+      border: 1px solid var(--border);
+      background: rgba(255,255,255,0.12);
+    }
+
+    .slide-icon svg {
+      width: 12px;
+      height: 12px;
+      fill: var(--text);
+    }
+
     .authors, .notes {
       color: var(--muted);
     }
@@ -158,7 +198,8 @@
         <h1>Information Physics Reading Club</h1>
         <p>
           Reading papers by Claude Shannon, Karl Friston, Rolf Landauer, and similar — 
-          to better understand how information behaves in our physical reality.
+          to better understand how information behaves in our physical reality. 
+          Probability, thermodynamics, machine learning. 
         </p>
       </header>
 
@@ -204,6 +245,16 @@
             discussed “The math is not the territory: navigating the free energy principle”,
             Mel Andrews (2020); and “On Bayesian mechanics: a physics of and by beliefs”,
             Ramstead et al. (2023).
+            <div class="slides">
+              <a class="slide-link" href="https://docs.google.com/presentation/d/1PARqpa3jfNGLpUxh6ip5VFeTxbtyZSrL88sbHTns47w/edit?usp=drive_link">
+                <span class="slide-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" focusable="false" aria-hidden="true">
+                    <path d="M5 4h9l5 5v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2zm8 1v4h4l-4-4zM7 11h10v2H7v-2zm0 4h10v2H7v-2z"/>
+                  </svg>
+                </span>
+                Slides: Bayesian Mechanics and The Math Is Not the Territory
+              </a>
+            </div>
           </li>
 
           <li>
@@ -216,7 +267,33 @@
             <span class="session-title">[Dec 11, 2025]</span>
             “Intuition &amp; Mathematics of Free Energy”:
             discussed selected works by Karl Friston.
+            <div class="slides">
+              <a class="slide-link" href="https://docs.google.com/presentation/d/1KhqO2qv7YOcYvDc-CCZKnWfxPUj-3n8s2m-UzaYA9lA/edit?usp=drive_link">
+                <span class="slide-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" focusable="false" aria-hidden="true">
+                    <path d="M5 4h9l5 5v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2zm8 1v4h4l-4-4zM7 11h10v2H7v-2zm0 4h10v2H7v-2z"/>
+                  </svg>
+                </span>
+                Slides: Mathematics &amp; Intuition of Free Energy
+              </a>
+            </div>
           </li>
+
+          <li>
+            <span class="session-title">[Jan 13, 2026]</span>
+            Discussed “Thermodynamics of Information”, Juan MR Parrondo.
+            <div class="slides">
+              <a class="slide-link" href="https://docs.google.com/presentation/d/1hH4SH2EbxfBFjOX2hZW7VclJYHlifF97vy67uPvfk0o/edit?usp=drive_link">
+                <span class="slide-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" focusable="false" aria-hidden="true">
+                    <path d="M5 4h9l5 5v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2zm8 1v4h4l-4-4zM7 11h10v2H7v-2zm0 4h10v2H7v-2z"/>
+                  </svg>
+                </span>
+                Slides: Thermodynamics of Information
+              </a>
+            </div>
+          </li>
+
         </ul>
       </section>
 
@@ -273,5 +350,4 @@
     </section>
   </main>
 </body>
-</html
-::contentReference[oaicite:0]{index=0}
+</html>
