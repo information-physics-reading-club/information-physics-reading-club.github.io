@@ -6,17 +6,21 @@
   <title>Information Physics Reading Club</title>
   <meta name="description" content="Information Physics Reading Club: a community reading Shannon, Friston, Landauer, and related work on information, thermodynamics, and learning." />
   <link rel="canonical" href="https://information-physics-reading-club.github.io/" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500;600&family=Source+Serif+4:wght@400;600&display=swap" rel="stylesheet" />
 
   <style>
     :root {
-      --bg: #0b0f17;
-      --card: rgba(255, 255, 255, 0.06);
-      --text: rgba(255, 255, 255, 0.92);
-      --muted: rgba(255, 255, 255, 0.72);
-      --faint: rgba(255, 255, 255, 0.55);
-      --border: rgba(255, 255, 255, 0.10);
-      --link: rgba(255, 255, 255, 0.92);
-      --linkHover: rgba(255, 255, 255, 1);
+      --bg: #f7f4ee;
+      --card: #ffffff;
+      --text: #1e1e1e;
+      --muted: #4c4c4c;
+      --faint: #7a7a7a;
+      --border: #d8d2c6;
+      --link: #1b4d89;
+      --linkHover: #153c6d;
+      --accent: #a05a2c;
     }
 
     * { box-sizing: border-box; }
@@ -29,12 +33,13 @@
       justify-content: center;
 
       padding: 48px 18px;
-      background: radial-gradient(900px 600px at 20% 15%, rgba(255,255,255,0.08), transparent 60%),
-                  radial-gradient(900px 600px at 80% 85%, rgba(255,255,255,0.06), transparent 60%),
-                  var(--bg);
+      background:
+        linear-gradient(0deg, rgba(0,0,0,0.02), rgba(0,0,0,0.02)),
+        repeating-linear-gradient(0deg, rgba(0,0,0,0.02), rgba(0,0,0,0.02) 1px, transparent 1px, transparent 6px),
+        var(--bg);
 
       color: var(--text);
-      font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+      font-family: "Source Serif 4", "Iowan Old Style", "Palatino Linotype", "Palatino", "Times New Roman", serif;
       line-height: 1.55;
     }
 
@@ -46,16 +51,16 @@
     .card {
       background: var(--card);
       border: 1px solid var(--border);
-      border-radius: 18px;
-      padding: 28px 26px;
-      box-shadow: 0 10px 32px rgba(0,0,0,0.35);
-      backdrop-filter: blur(10px);
+      border-radius: 12px;
+      padding: 30px 28px;
+      box-shadow: 0 10px 24px rgba(0,0,0,0.08);
     }
 
     header h1 {
       margin: 0 0 10px 0;
-      font-size: 2.0rem;
-      letter-spacing: 0.2px;
+      font-size: 2.1rem;
+      letter-spacing: 0.4px;
+      font-weight: 600;
     }
 
     header p {
@@ -74,8 +79,9 @@
       margin: 0 0 10px 0;
       font-size: 1.05rem;
       text-transform: uppercase;
-      letter-spacing: 0.12em;
+      letter-spacing: 0.16em;
       color: var(--faint);
+      font-family: "IBM Plex Mono", "SFMono-Regular", Menlo, Monaco, Consolas, "Liberation Mono", monospace;
     }
 
     p {
@@ -125,11 +131,12 @@
       padding: 6px 12px;
       border-radius: 999px;
       border: 1px solid var(--border);
-      background: rgba(255,255,255,0.08);
+      background: #f7f2e6;
       text-decoration: none;
       font-weight: 600;
       font-size: 0.95rem;
       color: var(--text);
+      font-family: "IBM Plex Mono", "SFMono-Regular", Menlo, Monaco, Consolas, "Liberation Mono", monospace;
     }
 
     .slide-link:hover {
@@ -143,7 +150,7 @@
       display: inline-grid;
       place-items: center;
       border: 1px solid var(--border);
-      background: rgba(255,255,255,0.12);
+      background: #efe7d7;
     }
 
     .slide-icon svg {
@@ -169,13 +176,14 @@
       padding: 10px 14px;
       border-radius: 12px;
       border: 1px solid var(--border);
-      background: rgba(255,255,255,0.08);
+      background: #f7f2e6;
       text-decoration: none;
       font-weight: 600;
+      font-family: "IBM Plex Mono", "SFMono-Regular", Menlo, Monaco, Consolas, "Liberation Mono", monospace;
     }
 
     .button:hover {
-      background: rgba(255,255,255,0.12);
+      background: #efe7d7;
     }
 
     .small {
